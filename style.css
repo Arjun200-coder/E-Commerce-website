@@ -1,0 +1,336 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+  }
+  
+  /* Header Styling */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin: 0 15px;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+    }
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Search Bar */
+  .search-container {
+    margin: 10px 0;
+  }
+  #searchBar {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .product {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .product img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .product p {
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+  
+   /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* About Page Styling */
+.about {
+    padding: 20px;
+    text-align: center;
+  }
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .about-content {
+    max-width: 600px;
+    margin: 10px;
+    text-align: left;
+    line-height: 1.6;
+  }
+  .about-content p {
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design for About Page */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-photo {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Contact Page Styling */
+.contact {
+    padding: 20px;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .contact-form label {
+    display: flex;
+    padding-left: 15px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background: #555;
+  }
+  
+  /* Responsive Design for Contact Form */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 15px;
+    }
+    .contact h2 {
+      font-size: 1.8rem;
+    }
+    .contact p {
+      font-size: 1rem;
+    }
+  }
+  
+/* Services Page Styling */
+.services {
+    padding: 20px;
+    text-align: center;
+  }
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .services p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .service-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .service-box img {
+    width: 200px;
+    height: 110px;
+    margin-bottom: 10px;
+  }
+  .service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .service-box p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Responsive Design for Services Page */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+    .services h2 {
+      font-size: 1.8rem;
+    }
+    .services p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Footer Styling */
+#stickyFooter {
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #444;
+  }
+  .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links li {
+    margin: 5px 0;
+  }
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover {
+    color: #fff;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    background: #222;
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-links {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Sticky Footer on Scroll */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+  }
+  

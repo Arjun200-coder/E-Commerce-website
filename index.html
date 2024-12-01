@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/1162/1162456.png?ga=GA1.1.783388409.1719124054&semt=ais_hybrid" >
+</head>
+<body>
+  <header>
+    <nav>
+    <h1 class="logo">ShopEase</h1>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Me</a></li>
+        <li><a href="./service.html">Services</a></li>
+        <li><a href="./contect.html">Contact Us</a></li>
+    </ul>
+    </nav>
+    <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+    </div>
+  </header>
+  
+  <main>
+    <section id="home">
+    <h2>Welcome to ShopEase</h2>
+    <p>Find everything you need in one place!</p>
+
+    <div class="product-container" id="productContainer">
+        <div class="product" data-name="Laptop">
+        <img src="https://media.istockphoto.com/id/962925072/photo/laptop-with-red-bow-tie-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=88SOee5q6NLex5qJc473zaxTmrgEjdDovhe5yiJuf24=" alt="Laptop">
+        <p>Laptop - $1000</p>
+        </div>
+        <div class="product" data-name="Smartphone">
+        <img src="https://images.unsplash.com/photo-1726591671647-e2987afba39e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmV3JTIwc21hcnRwaG9uZXN8ZW58MHx8MHx8fDA%3D" alt="Smartphone">
+        <p>Smartphone - $800</p>
+        </div>
+        <div class="product" data-name="Headphones">
+        <img src="https://media.istockphoto.com/id/1303938798/photo/white-headphone-floating-on-white-background-minimal-concept-idea-monochrome-3d-render.webp?a=1&b=1&s=612x612&w=0&k=20&c=F8PWMk0CnvdzlHk8ZEmNEXjYcyEYQwQLCOBgNykVuqs=" alt="Headphones">
+        <p>Headphones - $150</p>
+        </div>
+        <div class="product" data-name="Camera">
+        <img src="https://images.unsplash.com/photo-1732256705928-76db73d83751?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIwY2FtZXJhfGVufDB8fDB8fHww" alt="Camera">
+        <p>Camera - $500</p>
+        </div>
+
+        <div class="product" data-name="Volleyball">
+        <img src="https://t3.ftcdn.net/jpg/08/78/89/24/240_F_878892410_QPxgNzBVdeOQBQePMzbOfnhLlMWQaRK8.jpg" alt="Volleyball">
+        <p>Volleyball - $90 </p>
+        </div> 
+
+        <div class="product" data-name="Vasline">
+        <img src="https://t4.ftcdn.net/jpg/07/98/35/87/240_F_798358711_5rRBiURQKoEe4m4U3qg51Z4dGFKSJkdI.jpg" alt="Vasline">
+        <p>Vasline - $189</p>
+        </div>
+
+        <div class="product" data-name="Jacket">
+        <img src="https://t4.ftcdn.net/jpg/09/00/60/43/240_F_900604360_8NYbfDgIPj87C6fpBzp2dGvK6tEdzlHy.jpg" alt="Jacket">
+        <p>Jacket - $489 </p>
+        </div>
+
+
+        <div class="product" data-name="Shoes">
+        <img src="https://t3.ftcdn.net/jpg/08/59/54/70/240_F_859547035_i61NhdlFbJq3oxGZb7PKkyZlKdMR2jZT.jpg" alt="Shose">
+        <p>shoes - $299</p>
+        </div>
+
+        <div class="product" data-name="Laptop">
+        <img src="https://t4.ftcdn.net/jpg/04/51/83/75/240_F_451837591_ffiwd5lJq1IWtcyLQ9RqziZrc95ve7JI.jpg" alt="Laptop">
+        <p> Laptop i5 - $930</p>
+        </div>
+
+        <div class="product" data-name="Headphones">
+        <img src="https://t4.ftcdn.net/jpg/10/67/96/39/240_F_1067963919_SXh2FOSYpunMTMoPkYQAWFuxJseHVOph.jpg" alt="Headphones">
+        <p> Headphones - $130</p>
+        </div>
+
+        <div class="product" data-name="Smartphone">
+        <img src="https://t3.ftcdn.net/jpg/10/46/60/98/240_F_1046609895_8OWYVpwTZcosr8pUEdDOrnGxc9Yttkkg.jpg" alt="Smartphone">
+        <p>Smartphone - $760 </p>
+        </div>
+
+        <div class="product" data-name=" Camera">
+        <img src="https://t4.ftcdn.net/jpg/08/91/86/81/240_F_891868106_6CyXxz7cJ1EuSYLtxB2yCzmPXpARLJzj.jpg" alt=" Camera">
+        <p> Camera - $460</p>
+        </div>
+
+        <div class="product" data-name="Volleyball">
+        <img src="https://t3.ftcdn.net/jpg/01/95/16/82/240_F_195168273_v0KBdLzsFZqF6DmduDohFk7oA1tpWXTH.jpg" alt="Volleyball">
+        <p> Volleyball - $110</p>
+        </div>
+
+        <div class="product" data-name="Cricketball">
+        <img src="https://t4.ftcdn.net/jpg/00/92/62/63/240_F_92626361_l6t1Vd2TsgyFLyI2S91Z6PdNUFpNuvzW.jpg" alt="Cricket ball">
+        <p>Cricket ball - $69 </p>
+        </div>
+
+        <div class="product" data-name="Jacket">
+        <img src="https://t3.ftcdn.net/jpg/09/25/17/20/240_F_925172060_kX2LOlZ6IY7pIn1THSOz5kSTg3xfARli.jpg" alt="Jacket">
+        <p>Jacket - $369 </p>
+        </div>
+
+        <div class="product" data-name="Pens">
+        <img src="https://t4.ftcdn.net/jpg/03/80/73/35/240_F_380733555_ssNqkE0cyHDvfdKbow3fsQCa50eFq0QY.jpg" alt="Pens">
+        <p>Pens - $19</p>
+        </div>
+
+        <div class="product" data-name="Smartwatch">
+        <img src="https://t4.ftcdn.net/jpg/04/14/76/97/240_F_414769738_EfP99yrJg78OjGl3p2JqhyGFKUrDHZXM.jpg" alt="Smart Watch">
+        <p>Smart Watch - $266</p>
+        </div>
+
+        <div class="product" data-name="Toys">
+        <img src="https://t4.ftcdn.net/jpg/02/47/16/45/240_F_247164522_gI1iQIp2Vo2ZR2NgaUPzx5PR6PX1Qvkx.jpg" alt="Toys">
+        <p>Toy - $169 </p>
+        </div>
+
+        <div class="product" data-name="Cricketkit">
+        <img src="https://t3.ftcdn.net/jpg/00/58/34/90/240_F_58349021_8GhgBXdA44uIOvzCzjkjtufE47TTt3ls.jpg" alt="Cricketkit">
+        <p>Cricket Kit - $399</p>
+        </div>
+
+        <div class="product" data-name="Glasses">
+        <img src="https://t3.ftcdn.net/jpg/10/34/01/62/240_F_1034016232_YF19MqodnBZVbkxpsWibwxsIDqCO4obF.jpg" alt="Glasses">
+        <p>Sun glasses - $139 </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+    <footer id="stickyFooter">
+        <div class="footer-top">
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./about.html">About Me</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./contect.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+            Shop from 10+,products across categories like electronics, fashion, home, and more! Enjoy amazing deals, fast delivery, and secure payments. Discover top brands and unbeatable prices. Your one-stop destination for everything you need. Shop smart, save more—experience hassle-free shopping today! "Aajo lelo saman jldi aao sasta kr rakha hai."
+        </div>
+      </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
